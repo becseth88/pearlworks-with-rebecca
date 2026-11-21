@@ -24,13 +24,15 @@
     <link rel="stylesheet" href="../assets/site.css" />
     <link rel="stylesheet" href="../assets/artwork.css" />
     <script src="../assets/site.js" defer></script>
+    <link rel="stylesheet" href="../assets/about.css" />
+    <script src="../assets/about.js" defer></script>
   </head>
-  <body
-    ><div id="root">
+  <body>
+    <div id="root">
       <link rel="preload" as="image" href="../assets/pearlworks/favicon.png" />
-      <a class="skip-link" href="#main">Skip to content</a
-      ><header class="site-header relume-navbar1"
-        ><div class="nav-wrap">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <header class="site-header relume-navbar1">
+        <div class="nav-wrap">
           <a
             class="wordmark"
             href="../index.html"
@@ -46,180 +48,334 @@
             aria-label="Open navigation"
             aria-controls="main-nav"
             aria-expanded="false"
-            >Menu <span aria-hidden="true">☰</span></button
-          ><nav id="main-nav" aria-label="Main navigation" class=""
-            ><a href="../get-bookable/index.html">Get Bookable</a
+          >
+            Menu <span aria-hidden="true">☰</span>
+          </button>
+          <nav id="main-nav" aria-label="Main navigation" class="">
+            <a href="../get-bookable/index.html">Get Bookable</a
             ><a href="../pearl-sequence-sessions/index.html">Sessions</a
             ><a href="../pearlsites/index.html">Pearlsites</a
             ><a href="../pearlworks/index.html">Pearlworks</a
             ><a href="index.html" aria-current="page">About</a
             ><a class="nav-enquire" href="https://tidycal.com/becseth"
               >View bookings <span aria-hidden="true">↗</span></a
-            ></nav
-          >
-        </div></header
-      ><main id="main"
-        ><div>
-          <section class="page-intro container about-page-intro"
-            ><p class="eyebrow">A little about me</p>
-            <h1>Hello, I’m Rebecca.</h1>
-            <div class="about-opening">
-              <div>
-                <p class="lead"
-                  >I’m a Gene Keys Guide from Perth, Western Australia. My
-                  background is in biomedical research and statistics, and I
-                  love birds, long walks and conversations that help something
-                  become clearer.</p
-                >
-                <p
-                  >I’m interested in how contemplation connects with the
-                  everyday work of offering our skills to others.</p
-                >
-              </div>
-              <figure class="portrait-frame about-portrait"
-                ><img
-                  src="../assets/photos/rebecca-portrait.webp"
-                  alt="Rebecca smiling, wearing a black top and a key pendant."
-                  width="1228"
-                  height="1536"
-                  loading="eager"
-              /></figure> </div
-          ></section>
-          <section class="section about-story"
-            ><div class="container split align-start">
-              <div>
-                <p class="eyebrow">My way into the Gene Keys</p>
-                <h2>It began with<br />a recommendation.</h2>
-                <div class="milestones">
-                  <div>
-                    <span>April 2023</span
-                    ><p
-                      >An Audible recommendation introduced me to the Gene
-                      Keys.</p
-                    >
-                  </div>
-                  <div>
-                    <span>September 2024</span
-                    ><p>I completed the Gene Keys Guides Programme.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="prose">
-                <p class="lead"
-                  >Since then, the Gene Keys has become a continuing part of my
-                  contemplation.</p
-                >
-                <p
-                  >I particularly love the Delta programme. I have participated
-                  in four Deltas and in the Star of Consciousness.</p
-                >
-                <p
-                  >In this work, I bring that love of contemplation together
-                  with the practical task of describing what we offer and making
-                  it easier for people to find us.</p
-                >
-                <p
-                  >My research background brings an appreciation for careful
-                  listening, clear language and organising complex material. I
-                  enjoy finding a useful structure without losing the person’s
-                  own words.</p
-                >
-              </div>
-            </div></section
-          >
-          <section class="section about-approach"
-            ><div class="container split">
-              <figure class="portrait-frame cafe-frame"
-                ><img
-                  src="../assets/photos/rebecca-cafe-edited.webp"
-                  alt="Rebecca in her tiger T-shirt at an outdoor café beside the water."
-                  width="1122"
-                  height="1402"
-                  loading="lazy" /></figure
-              ><div>
-                <p class="eyebrow">Working with me</p>
-                <h2>Space to speak.<br />Help to bring it together.</h2>
-                <p class="lead"
-                  >You bring the experience of your work. I bring questions,
-                  attention and help organising what emerges.</p
-                >
-                <p
-                  >We can pause, return to a thought and try different words.
-                  The aim is language you recognise, grounded in what you
-                  actually offer.</p
-                >
-                <a
-                  class="text-link"
-                  href="../pearl-sequence-sessions/index.html"
-                  >Explore my approach<span aria-hidden="true">↗</span></a
-                >
-              </div>
-            </div></section
-          >
+            >
+          </nav>
         </div>
-        <section class="section connective-section"
-          ><div class="container split">
-            <div>
-              <p class="eyebrow">The Pearlworks connection</p>
-              <h2>Why Pearlworks</h2>
+      </header>
+      <main id="main" class="about-page">
+        <section
+          class="about-profile"
+          data-relume="header1"
+          aria-labelledby="about-title"
+        >
+          <div class="about-wrap about-profile-grid">
+            <div class="profile-copy">
+              <p class="about-kicker">
+                Gene Keys Guide · Perth, Western Australia
+              </p>
+              <h1 id="about-title">Hello, I’m <em>Rebecca.</em></h1>
+              <p class="about-lead">
+                I love birds, long walks and conversations that help something
+                become clearer.
+              </p>
+              <p>
+                My background is in biomedical research and statistics. These
+                days, I help people bring their Pearl Sequence into the everyday
+                work of describing what they offer, in words that sound like
+                them.
+              </p>
+              <nav class="about-jumps" aria-label="On this page">
+                <a href="#my-pearl-sequence">My Pearl Sequence</a>
+                <a href="#how-i-work">How I work</a>
+              </nav>
             </div>
-            <div>
-              <p
-                >Pearlworks gives this work a wider home. Alongside the
-                individual offerings, I am exploring how people can learn in
-                relationship, create a body of useful work and support continued
-                participation.</p
-              >
-              <a class="text-link" href="../pearlworks/index.html"
-                >Explore Pearlworks <span aria-hidden="true">↗</span></a
-              ><a class="text-link" href="https://tidycal.com/becseth"
-                >View bookings <span aria-hidden="true">↗</span></a
+            <figure class="profile-portrait">
+              <img
+                src="../assets/photos/rebecca-portrait.webp"
+                alt="Rebecca smiling in the sunshine, wearing a white top and a key pendant."
+                width="1228"
+                height="1536"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section
+          class="about-history about-band"
+          data-relume="timeline1"
+          aria-labelledby="history-title"
+        >
+          <div class="about-wrap history-grid">
+            <div class="history-intro">
+              <h2 id="history-title">My way into the Gene Keys</h2>
+              <p>
+                The Delta programme is a particular love of mine. I’ve taken
+                part in four Deltas and in the Star of Consciousness. I also
+                love having a book, a notebook and a patch of grass to myself.
+              </p>
+              <figure class="history-photo">
+                <img
+                  src="../assets/photos/rebecca-park-genekeys.webp"
+                  alt="Rebecca on a picnic rug with her Gene Keys books and handwritten notes."
+                  width="1152"
+                  height="1536"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </div>
+            <ol class="about-timeline" aria-label="My Gene Keys journey">
+              <li>
+                <time datetime="2023-04">April 2023</time>
+                <h3>An Audible recommendation</h3>
+                <p>
+                  That’s how I first came across the Gene Keys. I’m still
+                  sitting with the questions that grew out of that first listen.
+                </p>
+              </li>
+              <li>
+                <time datetime="2024-09">September 2024</time>
+                <h3>Gene Keys Guides Programme</h3>
+                <p>
+                  I completed the Guides Programme and became a Gene Keys Guide.
+                </p>
+                <a
+                  class="about-link"
+                  href="../assets/credentials/gene-keys-guides-certificate.webp"
+                  data-image-title="Gene Keys Guide certificate"
+                  >View my Guide certificate</a
+                >
+              </li>
+              <li>
+                <time datetime="2026-07">July 2026</time>
+                <h3>Gene Keys Delta Guides Module</h3>
+                <p>I went on to complete the Delta Guides Module.</p>
+                <a
+                  class="about-link"
+                  href="../assets/credentials/gene-keys-delta-certificate.webp"
+                  data-image-title="Gene Keys Delta Guide certificate"
+                  >View my Delta Guide certificate</a
+                >
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section
+          class="about-sequence about-band"
+          id="my-pearl-sequence"
+          data-relume="layout628"
+          aria-labelledby="sequence-title"
+        >
+          <div class="about-wrap">
+            <div class="sequence-heading">
+              <h2 id="sequence-title">My Pearl Sequence</h2>
+              <p>
+                These are four commitments I return to in my own work. I
+                associate each sphere with an animal, and with a few words that
+                help me remember what I want to practise.
+              </p>
+            </div>
+            <ul class="sphere-grid">
+              <li>
+                <span class="sphere-art sphere-bee"
+                  ><img
+                    src="../assets/about/pearl-sequence-totems.webp"
+                    width="1200"
+                    height="1126"
+                    loading="lazy"
+                    decoding="async"
+                    alt="A bee beside a flower."
+                /></span>
+                <div>
+                  <p class="sphere-label">Vocation · 14.2 <span>Bee</span></p>
+                  <h3>Purposeful Propagation</h3>
+                  <p>Grow what gives life, with care and intention.</p>
+                </div>
+              </li>
+              <li>
+                <span class="sphere-art sphere-starlings"
+                  ><img
+                    src="../assets/about/pearl-sequence-totems.webp"
+                    width="1200"
+                    height="1126"
+                    loading="lazy"
+                    decoding="async"
+                    alt="A flock of starlings in flight."
+                /></span>
+                <div>
+                  <p class="sphere-label">
+                    Culture · 51.6 <span>Starling flock</span>
+                  </p>
+                  <h3>Courageous Coherence</h3>
+                  <p>
+                    Initiate change while honouring the intelligence of the
+                    whole.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="sphere-art sphere-elephant"
+                  ><img
+                    src="../assets/about/pearl-sequence-totems.webp"
+                    width="1200"
+                    height="1126"
+                    loading="lazy"
+                    decoding="async"
+                    alt="An elephant with lavender ears and a curled trunk."
+                /></span>
+                <div>
+                  <p class="sphere-label">Brand · 21.1 <span>Elephant</span></p>
+                  <h3>Sovereign Stewardship</h3>
+                  <p>
+                    Exercise authority through trust, dignity and
+                    responsibility.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="sphere-art sphere-otter"
+                  ><img
+                    src="../assets/about/pearl-sequence-totems.webp"
+                    width="1200"
+                    height="1126"
+                    loading="lazy"
+                    decoding="async"
+                    alt="An otter holding a pearl."
+                /></span>
+                <div>
+                  <p class="sphere-label">Pearl · 27.3 <span>Otter</span></p>
+                  <h3>Celebratory Circulation</h3>
+                  <p>
+                    Let care, resources and joy circulate to nourish everyone.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          class="about-method about-band"
+          id="how-i-work"
+          data-relume="layout1"
+          aria-labelledby="method-title"
+        >
+          <div class="about-wrap method-grid">
+            <div class="method-copy">
+              <h2 id="method-title">How I work</h2>
+              <p>
+                I began my research career in a DNA extraction lab and later
+                worked as a biostatistician. I still love the moment a pattern
+                starts to make sense. In a Pearlworks conversation, I’m
+                listening for that in your words.
+              </p>
+              <p>
+                You bring the experience of your work. I bring questions,
+                attention and help organising what emerges. A phrase you say in
+                passing might become the opening line of your website, or a
+                thought you’d like to keep in your Sourcebook.
+              </p>
+              <a class="about-link" href="../pearlworks/index.html"
+                >Explore the wider Pearlworks vision</a
               >
             </div>
-          </div></section
-        ><section class="enquiry section" id="enquire"
-          ><div class="container split">
-            <h2>What are you ready to put into words?</h2>
-            <div>
-              <p
-                >You can begin with a question, a few scattered notes, or a
-                sense that it is time for your work to have a website. We agree
-                the format, timing and fee before working together.</p
-              >
+            <figure class="method-diagram">
               <a
-                href="https://tidycal.com/becseth"
-                data-slot="button"
-                class="inline-flex items-center justify-center gap-3 rounded-button whitespace-nowrap transition-all duration-200 ease-in-out focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-scheme-border bg-neutral-darkest text-white px-6 py-3 button button-coral"
-                >View bookings <span aria-hidden="true">↗</span></a
+                href="../assets/about/pearlworks-intersection-venn.webp"
+                data-image-title="The Pearlworks intersection"
+                aria-label="View the Pearlworks Venn diagram at full size"
+              >
+                <img
+                  src="../assets/about/pearlworks-intersection-venn.webp"
+                  width="1200"
+                  height="790"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Contemplative inquiry, research-informed synthesis and practical expression overlap. At the centre is ‘Your wisdom given form’."
+                />
+                <span>View full-size diagram</span>
+              </a>
+            </figure>
+          </div>
+        </section>
+
+        <section
+          class="about-invitation about-band"
+          aria-labelledby="invitation-title"
+        >
+          <div class="about-wrap invitation-inner">
+            <div>
+              <h2 id="invitation-title">
+                What are you ready to put into words?
+              </h2>
+              <p>
+                You can bring a question, a few scattered notes, or an offering
+                you’re finding hard to describe. We agree the format, timing and
+                fee before working together.
+              </p>
+            </div>
+            <div class="about-actions">
+              <a
+                class="button button-coral"
+                href="../pearl-sequence-sessions/index.html"
+                >Explore the sessions</a
+              >
+              <a class="about-link" href="https://tidycal.com/becseth"
+                >View bookings</a
               >
             </div>
-          </div></section
-        ></main
-      ><footer class="relume-footer12"
-        ><div class="container">
+          </div>
+        </section>
+        <dialog
+          id="about-image-viewer"
+          class="about-image-viewer"
+          aria-labelledby="about-image-title"
+        >
+          <div class="about-viewer-bar">
+            <h2 id="about-image-title"></h2>
+            <button type="button" data-image-zoom aria-pressed="false">
+              Zoom in
+            </button>
+            <form method="dialog"><button autofocus>Close</button></form>
+          </div>
+          <div
+            class="about-image-canvas"
+            tabindex="0"
+            role="region"
+            aria-label="Image detail"
+          ></div>
+        </dialog>
+      </main>
+      <footer class="relume-footer12">
+        <div class="container">
           <div class="footer-grid">
             <div>
               <p class="eyebrow">A place for your work to take shape</p>
               <h2>From your own voice.<br />Into the world.</h2>
-              <p
-                >Contemplation, conversation and useful things made together.</p
-              >
+              <p>
+                Contemplation, conversation and useful things made together.
+              </p>
               <a class="text-link" href="https://tidycal.com/becseth"
                 >Find your starting point <span aria-hidden="true">↗</span></a
               >
             </div>
             <div class="footer-columns">
-              <nav aria-label="Explore"
-                ><a href="../get-bookable/index.html">Get Bookable</a
+              <nav aria-label="Explore">
+                <a href="../get-bookable/index.html">Get Bookable</a
                 ><a href="../pearl-sequence-sessions/index.html">Sessions</a
                 ><a href="../pearlsites/index.html">Pearlsites</a
                 ><a href="../pearlworks/index.html">Pearlworks</a
-                ><a href="index.html">About</a></nav
-              ><nav aria-label="The wider picture"
-                ><a href="../pearlworks/index.html#your-material"
+                ><a href="index.html">About</a>
+              </nav>
+              <nav aria-label="The wider picture">
+                <a href="../pearlworks/index.html#your-material"
                   >Your material &amp; sharing</a
-                ><a href="https://tidycal.com/becseth">Bookings</a></nav
-              >
+                ><a href="https://tidycal.com/becseth">Bookings</a>
+              </nav>
             </div>
           </div>
           <div class="footer-bottom">
@@ -233,10 +389,11 @@
                 height="36"
                 alt=""
               /><span>Pearlworks<small>with Rebecca Seth</small></span></a
-            ><p>© 2026 Rebecca Seth · Perth, Western Australia</p>
+            >
+            <p>© 2026 Rebecca Seth · Perth, Western Australia</p>
           </div>
-        </div></footer
-      >
-    </div></body
-  >
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

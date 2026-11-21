@@ -2603,6 +2603,17 @@ details[open] > summary .expand-mark:after {
 .pw .cycle-note .small {
   margin-top: 14px;
 }
+.pw .cycle-flow-prose {
+  max-width: 72ch;
+  color: var(--ink);
+  background: #f5f3f9;
+  border-left: 3px solid var(--gold);
+  border-radius: 0 10px 10px 0;
+  margin: 0 auto 28px;
+  padding: 20px 26px;
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
 .pw .cycle-map {
   isolation: isolate;
   grid-template-columns: 1fr 1.25fr 1fr;

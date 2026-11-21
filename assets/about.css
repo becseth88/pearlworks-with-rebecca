@@ -1,0 +1,153 @@
+/* Static adaptations of Relume Header 1, Timeline 1, Layout 628 and Layout 1. */
+.about-page {
+  --about-rule: #d6d5de;
+  --about-plum: #625278;
+}
+.about-wrap { width: min(71rem, 88%); margin-inline: auto; }
+.about-band { padding-block: clamp(3.75rem, 7vw, 6.25rem); }
+.about-page h2 { font-size: clamp(2.25rem, 4.3vw, 3.75rem); }
+.about-page h3 { font-size: clamp(1.35rem, 2.1vw, 1.8rem); }
+.about-page :where(ul, ol) { margin: 0; padding: 0; list-style: none; }
+.about-page .about-link, .about-jumps a, .method-diagram a span {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #a69bb5;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .28em;
+}
+.about-page :where(.about-link, .about-jumps a, .method-diagram a):hover { color: var(--about-plum); }
+.about-profile {
+  padding-block: clamp(3.25rem, 7vw, 6rem);
+  background: linear-gradient(112deg, #fffdfa 4%, #fbf8fc 64%, #f4eff9);
+}
+.about-profile-grid, .history-grid, .method-grid {
+  display: grid;
+  align-items: center;
+  gap: clamp(2rem, 7vw, 6.5rem);
+}
+.about-profile-grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); }
+.profile-copy { max-width: 34rem; }
+.about-kicker, .about-timeline time, .sphere-label {
+  color: var(--about-plum);
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .085em;
+  text-transform: uppercase;
+}
+.about-profile h1 {
+  margin-block: 1.1rem 1.5rem;
+  font-size: clamp(3.6rem, 6.8vw, 6.1rem);
+  line-height: .99;
+}
+.about-profile h1 em { display: block; color: var(--about-plum); }
+.about-lead { font-size: clamp(1.38rem, 2.1vw, 1.72rem); line-height: 1.35; }
+.about-jumps { display: flex; flex-wrap: wrap; gap: .55rem 1.7rem; margin-top: 1.5rem; }
+.about-jumps a, .about-timeline .about-link { display: inline-block; padding-block: .35rem; }
+.profile-portrait {
+  justify-self: end;
+  width: min(100%, 26rem);
+  padding: 0 .8rem .8rem 0;
+  background: linear-gradient(140deg, transparent 49%, #e4daec 50%);
+  border-radius: .35rem 4rem .35rem .35rem;
+}
+.profile-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 4.7;
+  object-fit: cover;
+  object-position: 50% 39%;
+  border-radius: .35rem 3.6rem .25rem .35rem;
+}
+.about-history { background: #fff; border-bottom: 1px solid var(--about-rule); }
+.history-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2.5rem, 9vw, 8rem); }
+.history-intro > p { max-width: 39ch; }
+.history-photo {
+  width: min(100%, 21rem);
+  margin-top: 1.65rem;
+}
+.history-photo img { width: 100%; aspect-ratio: 1.36; object-fit: cover; object-position: 50% 48%; border-radius: .4rem; }
+.about-timeline { padding-left: .4rem; }
+.about-timeline li { position: relative; padding: 0 0 1.65rem 1.8rem; }
+.about-timeline li:last-child { padding-bottom: 0; }
+.about-timeline li:not(:last-child)::before {
+  content: ""; position: absolute; top: .83rem; bottom: -.83rem; left: .28rem;
+  width: 1px; background: #c9bfd4;
+}
+.about-timeline li::after {
+  content: ""; position: absolute; left: 0; top: .53rem; width: .62rem; height: .62rem;
+  border-radius: 50%; background: #806891; outline: 4px solid white;
+}
+.about-timeline h3 { margin-top: .35rem; }
+.about-timeline h3 + p { margin-top: .4rem; }
+.about-timeline .about-link { margin-top: .2rem; }
+.about-sequence { background: #f7f4fb; }
+.sequence-heading { max-width: 43rem; margin-bottom: clamp(2rem, 4vw, 3.15rem); }
+.sequence-heading p { max-width: 55ch; }
+.sphere-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #ccc1d8; }
+.sphere-grid > li { min-width: 0; padding-top: 1.6rem; }
+.sphere-grid > li + li { border-left: 1px solid #d9d1e0; }
+.sphere-grid > li:not(:first-child) { padding-left: clamp(1rem, 2vw, 1.7rem); }
+.sphere-grid > li:not(:last-child) { padding-right: clamp(1rem, 2vw, 1.7rem); }
+.sphere-label { margin-top: 1.05rem; }
+.sphere-label span { font-weight: 400; letter-spacing: 0; text-transform: none; white-space: nowrap; }
+.sphere-label span::before { content: " / "; }
+.sphere-grid h3 { margin-block: .55rem .6rem; line-height: 1.17; }
+.sphere-grid h3 + p { margin: 0; font-size: 1.12rem; line-height: 1.45; }
+/* Clip each animal to its own illustrated disc on the supplied 1200 × 1126 sheet. */
+.sphere-art { position: relative; display: block; border-radius: 50%; overflow: hidden; width: clamp(6.4rem, 9.4vw, 8.2rem); aspect-ratio: 1; }
+.sphere-art img { position: absolute; max-width: none; height: auto; width: var(--sheet); left: var(--left); top: var(--top); }
+.sphere-bee      { --sheet: 297.03%; --left: -8.42%;   --top: -160.89%; }
+.sphere-starlings{ --sheet: 298.51%; --left: -189.80%; --top: -171.64%; }
+.sphere-elephant { --sheet: 298.51%; --left: -101.24%; --top: -8.71%; }
+.sphere-otter    { --sheet: 322.58%; --left: -109.14%; --top: -123.66%; }
+.about-method { background: #fff; }
+.method-grid { grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); gap: clamp(2rem, 5.5vw, 5rem); }
+.method-copy p { max-width: 43ch; }
+.method-copy .about-link { display: inline-block; margin-top: 1.4rem; }
+.method-diagram a { display: block; text-align: right; }
+.method-diagram img { width: 100%; border: 1px solid #dddde4; border-radius: .3rem; }
+.method-diagram a span { display: inline-block; padding-block: .5rem; }
+.about-invitation { background: #e8f4f0; }
+.invitation-inner { display: flex; align-items: center; justify-content: space-between; gap: 3rem; }
+.invitation-inner > div:first-child { max-width: 42rem; }
+.invitation-inner p { max-width: 55ch; margin-top: 1rem; }
+.about-actions { display: flex; flex: none; flex-direction: column; align-items: center; gap: .8rem; }
+.about-image-viewer {
+  position: fixed; inset: 0; margin: auto; width: min(94vw, 66rem); max-width: 100%;
+  max-height: 94vh; max-height: 94dvh; padding: .8rem; border: 0; border-radius: .55rem;
+  background: #fff; color: var(--ink); overflow: auto;
+}
+.about-image-viewer::backdrop { background: rgb(25 41 67 / 78%); }
+.about-viewer-bar { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin-bottom: .8rem; }
+.about-viewer-bar h2 { flex: 1 1 12rem; font-size: 1.2rem; }
+.about-viewer-bar button { min-height: 2.75rem; padding: .3rem .8rem; border: 1px solid var(--about-rule); border-radius: .25rem; background: white; cursor: pointer; font-size: 1rem; }
+.about-image-canvas { overflow: auto; max-height: 73vh; max-height: 73dvh; }
+.about-image-canvas:focus-visible { outline: 2px solid var(--about-plum); outline-offset: -2px; }
+.about-image-canvas img { width: auto; max-width: 100%; max-height: 72vh; max-height: 72dvh; margin-inline: auto; }
+.about-image-viewer.is-zoomed .about-image-canvas img { max-width: none; max-height: none; margin: 0; }
+@media (max-width: 59.99rem) {
+  .sphere-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sphere-grid > li { padding: 1.4rem 1.5rem; }
+  .sphere-grid > li:nth-child(odd) { border-left: 0; padding-left: 0; }
+  .sphere-grid > li:nth-child(even) { padding-right: 0; }
+  .sphere-grid > li:nth-child(n+3) { border-top: 1px solid #d9d1e0; }
+  .invitation-inner { align-items: start; flex-direction: column; gap: 1.8rem; }
+  .about-actions { flex-direction: row; flex-wrap: wrap; gap: 1.4rem; }
+}
+@media (max-width: 44.99rem) {
+  .about-wrap { width: min(100% - 2.5rem, 34rem); }
+  .about-profile-grid, .history-grid, .method-grid { grid-template-columns: minmax(0, 1fr); }
+  .about-profile h1 em { display: inline; }
+  .profile-portrait { justify-self: start; width: min(100%, 22rem); }
+  .profile-portrait img { aspect-ratio: 1.12; object-position: 50% 32%; }
+  .history-photo { width: min(100%, 22rem); }
+  .history-photo img { aspect-ratio: 1.4; }
+  .sphere-grid { grid-template-columns: minmax(0, 1fr); }
+  .sphere-grid > li:nth-child(n) { display: grid; grid-template-columns: clamp(4.55rem, 19vw, 6.2rem) minmax(0, 1fr); align-items: center; gap: 1rem; padding: 1.2rem 0; border: 0; border-bottom: 1px solid #d9d1e0; }
+  .sphere-art { width: 100%; }
+  .sphere-label { margin: 0; }
+  .sphere-grid h3 { margin-block: .3rem; }
+  .method-diagram a span { font-size: 1rem; }
+}
